@@ -14,6 +14,9 @@ mongoose.connect("mongodb://127.0.0.1:27017/smart")
 .then(() => console.log("Connecting Success"))
 .catch((err) => console.log("Faild" , err));
 app.use(express.json());
+app.use(cors());
+
+
 
 
 seedInitialProducts();
@@ -27,3 +30,7 @@ app.listen(port,()=>{
     console.log(`Server is running at: http://localhost:${port}`);
 })
     
+function cors(): any {
+    throw new Error("Function not implemented.");
+}
+
