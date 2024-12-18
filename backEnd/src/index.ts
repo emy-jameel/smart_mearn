@@ -5,6 +5,7 @@ import { seedInitialProducts } from "./services/productServices";
 import routerProduct from "./routes/productRoute";
 import routerCart from "./routes/cartRoute";
 import dotenv from "dotenv";
+import cors from "cors";
 
 const app =express();
 const port = 3001;
@@ -30,7 +31,7 @@ app.listen(port,()=>{
     console.log(`Server is running at: http://localhost:${port}`);
 })
     
-function cors(): any {
-    throw new Error("Function not implemented.");
-}
+
+
+
 
